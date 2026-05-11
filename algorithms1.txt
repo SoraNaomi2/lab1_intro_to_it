@@ -1,0 +1,19 @@
+НАЧАЛО
+1. Подключить заголовочные файлы: <iostream>, <cstdlib>, <ctime>, <algorithm>
+2. Объявить использование пространства имён std
+3. Определить класс numbers:
+   3.1. Приватные поля: chis (int) — числитель, znam (int) — знаменатель
+   3.2. Конструктор numbers(int x, int y): chis ← x, znam ← y
+   3.3. Перегрузка оператора +=(const numbers& other):
+        - chis ← chis * other.znam + other.chis * znam
+        - znam ← znam * other.znam
+        - return *this
+   3.4. Метод print() const: вывести chis + "/" + znam
+4. Начало функции main():
+   4.1. srand(time(0)); setlocale(LC_ALL, "ru")
+   4.2. Создать объекты: a(1,2), b(1,3), c(2,5)
+   4.3. Вывести " a += b:", выполнить a += b, вывести результат
+   4.4. Вывести "\na += c:", выполнить a += c, вывести результат
+   4.5. Вывести "\nb += c:", выполнить b += c, вывести результат
+   4.6. return 0
+5. КОНЕЦ
